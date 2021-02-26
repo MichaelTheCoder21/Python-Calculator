@@ -1,0 +1,33 @@
+end = "0"
+while end == "0":
+    starter = input('type start to start the calculator ')
+    if starter == "start":
+        usage = input('what operation do you want to do 1=add 2=subtract 3=multiply 4=divide 5=Stop ')
+        if usage == "1":
+            first = input('what number do you want to add ')
+            second = input('what number do you want to add to ' + first + ' ')
+            output = int(first) + int(second)
+            print(output)
+        if usage == "2":
+            first = input('what number do you want to subtract ')
+            second = input('what number do you want to subtract to ' + first + ' ')
+            output = int(first) - int(second)
+            print(output)
+        if usage == "3":
+            first = input('what number do you want to multiply ')
+            second = input('what number do you want to multiply ' + first + ' by ')
+            output = int(first) * int(second)
+            print(output)
+        if usage == "4":
+            first = input('what number do you want to divide ')
+            second = input('what number do you want to divide ' + first + ' by ')
+            if second == "0":
+                print('Error 001' * 1)
+                print('cant divide by 0')
+            output = int(first) / int(second)
+            print(output)
+        if usage == "5":
+            end = input('say yes to confirm ')
+            if end == "yes":
+                print('Closing')
+    break
